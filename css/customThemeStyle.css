@@ -1,0 +1,298 @@
+
+body, html {
+	margin: 0;
+ 		min-height:100%;  
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #222;
+}
+
+.header-image {
+	height: 100%;
+	
+}
+
+
+footer{
+	background-color:#222;
+	
+
+}
+#menu-menu-2 {
+	list-style-type: none;
+	overflow: hidden;
+	padding-top:30px;
+	padding-bottom: 30px;
+	text-align: center;
+	display: inline-block;
+	
+
+}
+#menu-menu-2  li {
+	float:left;
+	list-style-type: none;
+
+}
+#menu-menu-2 li a {
+
+	display: block;
+	text-decoration: none;
+	color: #9d9d9d;;
+	padding: 10px;
+	
+
+}
+#menu-menu-2  li a:hover{
+	color: white;
+}
+p.lead {
+	text-align: center;
+}
+form {
+	padding-bottom: 20px;
+}
+.btn {
+	margin-right: 17%;
+}
+   
+#image1 {
+	
+	
+    margin-top:15%;
+  
+}
+#image2 {
+	
+    margin-top:10%;
+
+}
+ #image1 img, #image2 img {
+	width: 100%;
+}
+ #image2 img {
+ 	padding-bottom: 5%;
+ }
+
+.main-page1 h2 {
+	text-align: center;
+	padding-top: 2%;
+}
+.main-page1 p {
+	text-align: justify;
+	font-size: 18px;
+	padding-bottom: 1%;
+	padding-top: 1%
+}
+.body {
+	padding-top:2%;
+}
+
+
+.about-us h2, .about-us h3 {
+	text-align: center;
+	width:50%;
+	margin:0 auto;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+
+.about-us p {
+	font-size:18px;
+	text-align: justify;
+}
+.about-body {
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-top: 1%;
+	padding-bottom: 3%;
+}
+.about-us h3 {
+
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.about-sidebar {
+	float: right;
+	margin-right: -5%;
+}
+
+.screen-reader-text {
+	display: none;
+}
+.adoptions-page {
+	padding-bottom: 5%;
+}
+.adoptions-page h2 {
+	text-align: center;
+	padding-bottom: 5%;
+}
+.adoptions-page img {
+	width:70%;
+	margin-left: 15%;
+}
+.adoptions-page h3 {
+	text-align: center;
+	padding-top: 5%;
+}
+.husky-details {
+	width:70%;
+	margin: 0 auto;
+	padding-top: 2%;
+	font-size:16px;
+}
+.husky-details2 {
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.husky-personality {
+text-align: justify;
+}
+
+
+.search-page ,.nothing-found{
+	height: 100vh;
+}
+.blog-sidebar {
+	float: right;
+	
+	margin-top:-20%;
+}
+.blog-item {
+	text-align: justify;
+}
+
+.blog-sidebar  ul{
+	list-style: none;
+}
+.entry-title a{
+	color:black;
+}
+.blog-element small a{
+	color: black;
+}
+.page-title {
+text-align: justify;
+}
+.post-categories {
+	list-style: none;
+}
+.cat-item a {
+	color: black;
+}
+#archives-3 a {
+	color: black;
+}
+#s {
+	
+	border: 1px solid grey;
+}
+#searchsubmit, input[type='submit']{
+	background-color: black;
+	color: white;
+	border-radius:5px;
+	border: 1px solid black;
+}
+
+.type-post, .post-container {
+	background: #f9f9f9;
+	border-radius: 5px;
+	padding:10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+.category{
+	text-align: center;
+}
+.entry-header,.entry-title{
+	text-align: center;
+}
+.no-results {
+	min-height: 75vh;
+}
+.form-row {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.btn-secondary {
+	background-color: #a4161b;
+	color: white;
+}
+.btn:not(.btn-inherit).btn-secondary {
+	background-color: #a4161b;
+	color: white;
+}
+.btn-group {
+	margin-bottom: 10px;
+}
+.amounts {
+	padding-right: 20px;
+}
+.woocommerce div.product div.images img {
+	width: 70%;
+}
+footer p {
+	color: #9d9d9d;
+}
+textarea {
+	 -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) and (min-width: 500px) {
+	.main-page {
+		height: 83vh;
+	}
+	.main-page p {
+		padding-left: 9%;
+		padding-right: 9%;
+	}
+#image1 {
+	float: left;
+}
+#image2 {
+	float: right;
+}
+#image1,#image2  {
+	width: 48%;
+	margin-top:0;
+}
+.about-sidebar {
+	margin-right: 0;
+}
+.contact-section, .shop-section {
+	min-height: 61vh;
+}
+.woocommerce div.product div.images img {
+	width: 50%;
+	margin: 0 auto;
+}
+.woocommerce div.product form.cart div.quantity {
+	float: none;
+	margin-bottom: 10px;
+}
+.woocommerce div.product form.cart .button {
+	float: none;
+}
+#post-142 {
+	text-align: center;
+}
+.adoptions-sections {
+	min-height: 50%;
+}
+}
+@media screen and (max-width: 500px) {
+.about-sidebar {
+	margin-right: 0;
+}	
+#menu-menu-2  li {
+	float: none;
+	
+}
+#menu-menu-2 {
+	padding-left: 0;
+}
+}
