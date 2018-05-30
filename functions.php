@@ -21,7 +21,23 @@ function husky_script_enqueue() {
 
 	}
 	add_action('init', 'husky_theme_setup');
-	add_theme_support('custom-background');
+
+    $defaults = array(
+    'default-image' => '',
+    'default-preset' => 'default',
+    'default-position-x' => 'left',
+    'default-position-y' => 'top',
+    'default-size' => 'auto',
+    'default-repeat' => 'repeat',
+    'default-attachment' => 'scroll',
+    'default-color' => '',
+    'wp-head-callback' => '_custom_background_cb',
+    'admin-head-callback' => '',
+    'admin-preview-callback' => '',
+);
+add_theme_support( 'custom-background', $defaults );
+
+
     $customHeaderSetting = array(
         'default-image' => '',
         'width' => 1280,
@@ -97,31 +113,6 @@ function husky_custom_post_type(){
 }
 add_action('init', 'husky_custom_post_type');
 
-function husky_custom_taxonomies(){
-    $labels = array(
-        'name' => 'Types',
-        'singular_name' => 'Type',
-        'search_items' => 'Search Items',
-        'all-items' => 'All Types',
-        'parent_item' => 'Parent Type',
-        'parent_item_colon' => 'Parent Type',
-        'edit_item' => 'Edit Type',
-        'update_item' => 'Update Type',
-        'add_new_item' => 'Add New Type',
-        'new_item_name' => 'New Type Name',
-        'menu_name' => 'Types', 
-    );
-    $args= array(
-        'hierarchical' => true,
-        'labels' => $labels,
-        'show_ui' => true,
-        'show_admin_column' => true,
-        'query_var' => true,
-        'rewrite' => array('slug'=> 'type')
-    );
-    register_taxonomy('type', array('adoptions'),$args);
-}
-add_action('init', 'husky_custom_taxonomies');
 
 function wpsites_modify_comment_form_text_area($arg) {
     $arg['comment_field'] = '<p class="comment-form-comment"><label for="comment">'  . '</label><textarea id="comment" name="comment" cols="40" rows="8" aria-required="true"></textarea></p>';
@@ -130,3 +121,7 @@ function wpsites_modify_comment_form_text_area($arg) {
 
 add_filter('comment_form_defaults', 'wpsites_modify_comment_form_text_area');
  ?>
+
+
+
+ 

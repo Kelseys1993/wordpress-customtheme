@@ -16,7 +16,7 @@
 		<div class="section-header">
 
 
-					<h2>Huskies Avaliable for adoption</h2>
+					<h2>Huskies Avaliable for Adoption</h2>
 						
 		</div>
 
@@ -46,11 +46,11 @@
 
 
 					</div><!-- end col -->
+	
 
 					<?php endwhile;wp_reset_query(); ?>
 
-				
-
+	
 				</div><!-- row -->
 
 	</div>

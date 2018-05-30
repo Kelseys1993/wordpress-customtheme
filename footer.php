@@ -11,7 +11,7 @@
 				<div class="row">
 					<div class="col">
 						
-							<p>Site developed By Kelsey Smith 2018</p>
+							<p>Site developed By  <a href="http://k.smith.yoobee.net.nz/portfolio/" class='portfolio-link' target="_blank">Kelsey Smith </a>2018 </p>
 							<p>This site is purely for educational purposes only</p>
 					</div>
 
